@@ -13,33 +13,39 @@
         <h1>Cristal Company</h1>
     </header>
     <main>
-        <section class="banner"> <img src="img/foto de base.jpeg" alt="Imagem propaganda de chaves de imóveis">
+        <section class="banner">
+            <h2>Venha com a gente encontrar sua tranquilidade durante a locação do seu imóvel</h2>
+
             <div class="resumo">
-                <h2>Venha com a gente encontrar sua tranquilidade durante a locação do seu imóvel</h2>
                 <p>A Cristal Company está há mais de 5 anos no mercado, atuando de forma eficiente, legalizada e
                     confiável na área de venda de imóveis. Tornamos todo o processo de venda muito mais simples, seguro
                     e transparente. Com a nossa empresa, você tem a tranquilidade de realizar um excelente negócio.
                     Conheça nossos benefícios:</p>
-                <ul>
-                    <li><strong>Segurança Jurídica:</strong> Todo o processo é realizado com respaldo legal, garantindo
-                        tranquilidade do início ao fim.</li>
+                <ul class="lista_beneficios">
                     <li><strong>Agilidade na Venda:</strong> Estratégias eficientes para acelerar a negociação do seu
                         imóvel.</li>
                     <li><strong>Avaliação Justa:</strong> Análise profissional para definir o melhor preço de mercado.
                     </li>
-                    <li><strong>Maior Visibilidade:</strong> Divulgação em múltiplas plataformas para alcançar mais
-                        compradores.</li>
+
                     <li><strong>Transparência Total:</strong> Acompanhamento claro de todas as etapas da negociação.
                     </li>
                     <li><strong>Suporte Especializado:</strong> Equipe preparada para orientar você em cada decisão.
                     </li>
+                    <li><strong>Maior Visibilidade:</strong> Divulgação em múltiplas plataformas para alcançar mais
+                        compradores.</li>
+                    <li><strong>Segurança Jurídica:</strong> Todo o processo é realizado com respaldo legal, garantindo
+                        tranquilidade do início ao fim.</li>
                 </ul>
             </div>
         </section>
         <section class="anuncio">
             <h2>Comece aqui o anúncio do seu imóvel</h2>
-            <p>Preencha as informações abaixo com dados reais.</p>
-            <p>Preencha cada etapa e clique em “Concluir” para avançar.</p>
+            <ul>
+                <li>
+                    Preencha as informações abaixo com dados reais.
+                </li>
+                <li>Preencha cada etapa e clique em “Concluir” para avançar.</li>
+            </ul>
 
             <div class="caixa_anuncio">
                 <form id="formulario">
@@ -50,7 +56,7 @@
 
                         <div class="bloco">
                             <label for="titulo">Título do anúncio:</label>
-                            <input type="text" id="titulo" name="titulo" required minlength="20" maxlength="40">
+                            <input type="text" id="titulo" name="titulo" required minlength="20" maxlength="80">
                         </div>
 
                         <div class="bloco">
@@ -112,6 +118,27 @@
                             <label for="area_total">Área total:</label>
                             <input type="number" id="area_total" name="area_total" required>
                         </div>
+
+                        <div class="bloco">
+                            <label for="adcinais"> Adcionais</label>
+                            <div class="checkbox">
+                                <label for="piscina">Suíte</label>
+                                <input type="checkbox" id="suite" name="adcionais" value="suite" required>
+
+                                <label for="piscina">Piscina</label>
+                                <input type="checkbox" id="piscina" name="adcionais" value="piscina" required>
+
+                                <label for="varanda">Varanda</label>
+                                <input type="checkbox" id="varanda" name="adcionais" value="varanda" required>
+
+                                <label for="Terraço">Terraço</label>
+                                <input type="checkbox" id="Terraço" name="adcionais" value="Terraço" required>
+
+                                <label for="closet">Closet</label>
+                                <input type="checkbox" id="closet" name="adcionais" value="closet" required>
+                            </div>
+                        </div>
+
 
                         <div class="botoes">
                             <button type="button" onclick="proximaEtapa(2)">Concluir</button>

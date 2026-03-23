@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --cor-verde-escuro-texto-destaque : #fbfcec;
+    --cor-verde-claro-cor-de-header-footer: #49520f;
+    --cor-do-bloco-formulario: #fdf4f4;
+    --cor-de-fundo:  #f1fafa;
+}
+
+header,
+footer{ 
+    background-color: var(--cor-verde-claro-cor-de-header-footer);
+    height: 80px;
+    color: var(--cor-verde-escuro-texto-destaque);
+    padding: 20px;
+    text-align: center;
+}
+ body{
+    background-image: url(../img/teste.jfif);
+    background-position: center;
+    background-size: cover;
+ }
+
+ main{
+    margin: 5% 15%;
+ }
+ 
+ .resumo{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 1.2rem;
+ }
+
+ .lista_beneficios{
+    padding:20px;
+ }
+
+ 
