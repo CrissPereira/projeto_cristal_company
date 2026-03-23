@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cristal Company anúncio de Imóveis</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Cristal Company</h1>
+    </header>
+    <main>
+        <section class="banner"> <img src="img/foto de base.jpeg" alt="Imagem propaganda de chaves de imóveis">
+            <div class="resumo">
+                <h2>Venha com a gente encontrar sua tranquilidade durante a locação do seu imóvel</h2>
+                <p>A Cristal Company está há mais de 5 anos no mercado, atuando de forma eficiente, legalizada e
+                    confiável na área de venda de imóveis. Tornamos todo o processo de venda muito mais simples, seguro
+                    e transparente. Com a nossa empresa, você tem a tranquilidade de realizar um excelente negócio.
+                    Conheça nossos benefícios:</p>
+                <ul>
+                    <li><strong>Segurança Jurídica:</strong> Todo o processo é realizado com respaldo legal, garantindo
+                        tranquilidade do início ao fim.</li>
+                    <li><strong>Agilidade na Venda:</strong> Estratégias eficientes para acelerar a negociação do seu
+                        imóvel.</li>
+                    <li><strong>Avaliação Justa:</strong> Análise profissional para definir o melhor preço de mercado.
+                    </li>
+                    <li><strong>Maior Visibilidade:</strong> Divulgação em múltiplas plataformas para alcançar mais
+                        compradores.</li>
+                    <li><strong>Transparência Total:</strong> Acompanhamento claro de todas as etapas da negociação.
+                    </li>
+                    <li><strong>Suporte Especializado:</strong> Equipe preparada para orientar você em cada decisão.
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="anuncio">
+            <h2>Comece aqui o anúncio do seu imóvel</h2>
+            <p>Preencha as informações abaixo com dados reais.</p>
+            <p>Preencha cada etapa e clique em “Concluir” para avançar.</p>
+
+            <div class="caixa_anuncio">
+                <form id="formulario">
+
+                    <!-- ETAPA 1 -->
+                    <fieldset class="etapa" id="etapa1">
+                        <legend>Informações do anúncio</legend>
+
+                        <div class="bloco">
+                            <label for="titulo">Título do anúncio:</label>
+                            <input type="text" id="titulo" name="titulo" required minlength="20" maxlength="40">
+                        </div>
+
+                        <div class="bloco">
+                            <label for="descricao">Descrição:</label>
+                            <textarea id="descricao" name="descricao" required minlength="20"
+                                maxlength="200"></textarea>
+                        </div>
+
+                        <div class="bloco">
+                            <label>Tipo de anúncio</label>
+                            <div class="opcoes">
+                                <input type="radio" id="venda" name="anuncio" value="venda" required>
+                                <label for="venda">Venda</label>
+
+                                <input type="radio" id="aluguel" name="anuncio" value="aluguel">
+                                <label for="aluguel">Aluguel</label>
+
+                                <input type="radio" id="temporada1" name="anuncio" value="temporada">
+                                <label for="temporada1">Temporada</label>
+                            </div>
+                        </div>
+
+                        <div class="bloco">
+                            <label>Tipo de imóvel</label>
+                            <div class="opcoes">
+                                <input type="radio" id="casa" name="imovel" value="casa" required>
+                                <label for="casa">Casa</label>
+
+                                <input type="radio" id="apartamento" name="imovel" value="apartamento">
+                                <label for="apartamento">Apartamento</label>
+                            </div>
+                        </div>
+
+                        <div class="bloco">
+                            <label for="preco">Preço</label>
+                            <input type="text" id="preco" name="preco" required>
+                        </div>
+
+                        <div class="botoes">
+                            <button type="button" onclick="proximaEtapa(1)">Concluir</button>
+                        </div>
+                    </fieldset>
+
+                    <!-- ETAPA 2 -->
+                    <fieldset class="etapa" id="etapa2" style="display:none;">
+                        <legend>Dados do imóvel</legend>
+
+                        <div class="bloco">
+                            <label for="cidade">Cidade:</label>
+                            <input type="text" id="cidade" name="cidade" required>
+                        </div>
+
+                        <div class="bloco">
+                            <label for="bairro">Bairro:</label>
+                            <input type="text" id="bairro" name="bairro" required>
+                        </div>
+
+                        <div class="bloco">
+                            <label for="area_total">Área total:</label>
+                            <input type="number" id="area_total" name="area_total" required>
+                        </div>
+
+                        <div class="botoes">
+                            <button type="button" onclick="proximaEtapa(2)">Concluir</button>
+                        </div>
+                    </fieldset>
+
+                    <!-- ETAPA 3 -->
+                    <fieldset class="etapa" id="etapa3" style="display:none;">
+                        <legend>Informações pessoais</legend>
+
+                        <div class="bloco">
+                            <label for="nome">Nome:</label>
+                            <input type="text" id="nome" name="nome" required>
+                        </div>
+
+                        <div class="bloco">
+                            <label for="tel">Telefone:</label>
+                            <input type="text" id="tel" name="tel" required>
+                        </div>
+
+                        <div class="bloco">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="botoes">
+                            <button type="submit">Finalizar</button>
+                        </div>
+                    </fieldset>
+
+                </form>
+            </div>
+        </section>
+
+
+    </main>
+    <footer>
+        <h3>Conheça mais sobre o desenvolvedor do site</h3>
+        <ul>
+
+            <li><a href="#">Linkedin</a></li>
+            <li><a href="#">GitHub</a></li>
+            <li><a href="#">Instagran</a></li>
+            <li><a href="#">E-mail</a></li>
+
+        </ul>
+    </footer>
+    <script src="JS/main.js"></script>
+</body>
+
+</html>
