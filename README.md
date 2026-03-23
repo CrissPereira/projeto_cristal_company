@@ -1,1 +1,3 @@
-Site de anúncio de imóveis criado para colocar em prática fundamento e técnicas em HTML utilizando formulários e seus atributos, JavaScrit com validação de informações e funcções, Responsividade, psicologia das cores e display flex com CSS 
+Site de anúncios de imóveis desenvolvido para aplicar, na prática, conceitos e técnicas de HTML, com foco em formulários e seus atributos, além de JavaScript para validação de dados e implementação de funções.
+
+O projeto também contempla responsividade, uso de display flex com CSS3 e aplicação de princípios de psicologia das cores para melhorar a experiência do usuário.
