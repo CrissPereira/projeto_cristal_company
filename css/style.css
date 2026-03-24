@@ -6,16 +6,16 @@
 }
 
 :root {
-    --cor-texto-destaque: #ffae00;
+    --cor-texto-destaque: rgb(255, 174, 0);
     ;
-    --cor-preta-destaque-header-footer: #272725;
+    --cor-verde-claro-cor-de-header-footer: #272725;
     --cor-do-bloco-formulario: #fdf4f4;
     --cor-de-fundo: #fcf8f5;
 }
 
 /*Cabeçalho*/
 header {
-    background-color: var(--cor-preta-destaque-header-footer);
+    background-color: var(--cor-verde-claro-cor-de-header-footer);
     height: 150px;
     color: var(--cor-verde-escuro-texto-destaque);
     padding: 20px;
@@ -39,11 +39,10 @@ body {
 
 /*Conteúdo do Site*/
 main {
-    margin: 5% auto;
+    margin: 5% 15%;
     background-color: var(--cor-de-fundo);
     border-radius: 30px;
-    padding: 50px;
-    width: 80%;
+    padding: 30px;
 }
 
 /*Textos em destaque amarelo*/
@@ -62,7 +61,7 @@ h2 {
 /*Beneficios*/
 .lista_beneficios {
     padding: 25px;
-    border: solid 1px var(--cor-preta-destaque-header-footer);
+    border: solid 1px var(--cor-verde-claro-cor-de-header-footer);
     border-radius: 10px;
     list-style: none;
 }
@@ -74,7 +73,7 @@ h2 {
 
 strong {
     color: var(--cor-texto-destaque);
-    background-color: var(--cor-preta-destaque-header-footer);
+    background-color: var(--cor-verde-claro-cor-de-header-footer);
     padding: 5px;
     border-radius: 10px;
 }
@@ -93,10 +92,6 @@ strong {
 
 /*Formulário*/
 
-.caixa_anuncio {
-    background-color: var(--cor-do-bloco-formulario); 
-}
-
 legend{
     text-align: center;
     font-weight: bolder;
@@ -108,10 +103,8 @@ legend{
     flex-direction: column;
     text-align:start;
     padding: 20px;
-    width: 100%;
-   
+    margin: 0 10% ;
     gap: 10px;
-
 }
 
 .bloco>label{
@@ -120,93 +113,5 @@ legend{
 
 .checkbox{
     display: flex;
-    gap: 5px;
-}
-.checkbox>label{
-    font-weight: normal;
-}
-
-input[type="text"]{
-    padding: 10px;
-    border: solid 1px var(--cor-preta-destaque-header-footer);
-    border-radius: 5px;
-    height: 30px;
-}
-
-textarea{
-    padding: 10px;
-    border: solid 1px var(--cor-preta-destaque-header-footer);
-    border-radius: 5px;
-    height: 100px;
-}
-
-.botoes{
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.botoes>button{
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    background-color: var(--cor-preta-destaque-header-footer);
-    color: var(--cor-de-fundo);
-    font-weight: bold;
-    cursor: pointer;
-}
-
-button:hover{
-    color: var(--cor-texto-destaque);
-}
-
-input[type="number"]{
-    padding: 10px;
-    border: solid 1px var(--cor-preta-destaque-header-footer);
-    border-radius: 5px;
-    height: 30px;
-    width: 50%;
-    
-}
-
-/* Responsividade para telas menores */
-@media (max-width: 768px) {
-    main {
-        width: 90%;
-        padding: 30px;
-    }
-
-    input[type="text"],
-    input[type="number"],
-    textarea {
-        width: 100%;
-    }
-
-    .checkbox {
-        flex-direction: column;
-        gap: 5px;
-    }
-
-    .botoes {
-        flex-direction: column;
-    }
-
-    .botoes>button {
-        width: 100%;
-    }
-}
-
-@media (max-width: 480px) {
-    main {
-        width: 95%;
-        padding: 20px;
-    }
-
-    header>h1 {
-        font-size: 1.8rem;
-    }
-
-    h2 {
-        font-size: 1.5rem;
-    }
+    justify-content: space-evenly;
 }
