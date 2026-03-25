@@ -43,7 +43,7 @@ main {
     background-color: var(--cor-de-fundo);
     border-radius: 30px;
     padding: 50px;
-    width: 80%;
+    width: 60%;
 }
 
 /*Textos em destaque amarelo*/
@@ -93,60 +93,56 @@ strong {
 
 /*Formulário*/
 
-.caixa_anuncio {
-    background-color: var(--cor-do-bloco-formulario); 
-}
-
-legend{
+legend {
     text-align: center;
     font-weight: bolder;
     padding: 30px;
 }
 
-.bloco{
+.bloco {
     display: flex;
     flex-direction: column;
-    text-align:start;
+    text-align: start;
     padding: 20px;
     width: 100%;
-   
+
     gap: 10px;
 
 }
 
-.bloco>label{
+.bloco>label {
     font-weight: bold;
 }
 
-.checkbox{
+.checkbox {
     display: flex;
     gap: 5px;
 }
-.checkbox>label{
+
+.checkbox>label {
     font-weight: normal;
 }
 
-input[type="text"]{
+input[type="text"] {
     padding: 10px;
     border: solid 1px var(--cor-preta-destaque-header-footer);
     border-radius: 5px;
     height: 30px;
 }
 
-textarea{
+textarea {
     padding: 10px;
     border: solid 1px var(--cor-preta-destaque-header-footer);
     border-radius: 5px;
     height: 100px;
 }
 
-.botoes{
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+.botoes {
+    text-align: center;
+    margin: 20px auto;
 }
 
-.botoes>button{
+.botoes>button {
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -156,57 +152,108 @@ textarea{
     cursor: pointer;
 }
 
-button:hover{
+button:hover {
     color: var(--cor-texto-destaque);
 }
 
-input[type="number"]{
+input[type="number"] {
     padding: 10px;
     border: solid 1px var(--cor-preta-destaque-header-footer);
     border-radius: 5px;
     height: 30px;
     width: 50%;
-    
 }
 
-/* Responsividade para telas menores */
-@media (max-width: 768px) {
+.rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--cor-preta-destaque-header-footer);
+    padding-bottom: 40px;
+}
+
+.rodape>h2 {
+    color: var(--cor-de-fundo);
+    background-color: var();
+}
+
+.lista_rodape {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+
+
+}
+
+a {
+    text-decoration: none;
+    color: var(--cor-de-fundo);
+    border: 1px solid var(--cor-de-fundo);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+a:hover {
+    border: 1px solid var(--cor-texto-destaque);
+    color: var(--cor-texto-destaque);
+    text-decoration: underline;
+}
+
+/* Estilos para as opções de radio */
+.opcoes {
+    display: flex;
+    gap: 10px;
+}
+
+/* Media Queries para responsividade */
+@media (max-width: 880px) {
     main {
-        width: 90%;
+        width: 80%;
         padding: 30px;
     }
 
-    input[type="text"],
-    input[type="number"],
-    textarea {
-        width: 100%;
-    }
-
-    .checkbox {
-        flex-direction: column;
-        gap: 5px;
-    }
-
-    .botoes {
-        flex-direction: column;
-    }
-
-    .botoes>button {
-        width: 100%;
-    }
-}
-
-@media (max-width: 480px) {
-    main {
-        width: 95%;
-        padding: 20px;
+    header {
+        height: 100px;
     }
 
     header>h1 {
-        font-size: 1.8rem;
+        font-size: 2rem;
+        padding: 10px;
     }
 
     h2 {
         font-size: 1.5rem;
     }
+
+    .resumo {
+        gap: 30px;
+    }
+
+    .lista_beneficios {
+        padding: 15px;
+    }
+
+    .anuncio {
+        padding: 20px;
+    }
+
+    .bloco {
+        padding: 10px;
+    }
+
+    input[type="number"] {
+        width: 60%;
+        margin-bottom: 10px;
+    }
+
+    .botoes {
+        text-align: center;
+        display: block;
+        margin: 20px auto;
+        gap: 10px;
+        width: 50%;
+    }
+
+
 }
+
