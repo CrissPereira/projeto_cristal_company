@@ -234,6 +234,14 @@ a:hover {
         font-size: 2rem;
     }
 
+     .opcoes {
+        flex-wrap: wrap;  
+    }
+
+    .rodape>h2 {
+        padding: 0px 20px;
+    }
+
     .lista_rodape {
         gap: 10px;
     }
@@ -245,18 +253,8 @@ a:hover {
         font-size: 1.5rem; 
     }
 
-    .lista_rodape {
-        flex-direction: column;
-    }
-
     .bloco {
         padding: 15px 10px;
-    }
-
-    main {
-        padding: 15px;
-        background-color: var(--cor-de-fundo);
-        color: var(--cor-de-fundo);
     }
 
     input[type="text"],
@@ -267,12 +265,13 @@ a:hover {
     }
 
     .opcoes {
-        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
         gap: 8px;
     }
 
     .lista_rodape {
-    flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
     gap: 40px;
     
