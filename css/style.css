@@ -105,9 +105,7 @@ legend {
     text-align: start;
     padding: 20px;
     width: 100%;
-
     gap: 10px;
-
 }
 
 .bloco>label {
@@ -214,6 +212,7 @@ a:hover {
 
 /* Media Queries para responsividade */
 @media (max-width: 820px) {
+
     h2 {
         font-size: 1.6rem;
     }
@@ -224,6 +223,7 @@ a:hover {
 
     main {
         max-width: 70%;
+
     }
 
     header {
