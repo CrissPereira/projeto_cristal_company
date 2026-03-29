@@ -87,14 +87,18 @@ strong {
 }
 
 .anuncio>ul {
-    margin-left: 2%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
 }
 
 /*Formulário*/
 legend {
     text-align: center;
     font-weight: bolder;
-    padding: 30px;
+    padding: 10px;
+
 }
 
 .bloco {
@@ -270,4 +274,11 @@ a:hover {
         flex-wrap: wrap;
     }
 
+}
+
+@media (max-width: 372px) {
+
+    legend {
+        font-size: 0.8rem;
+    }
 }
