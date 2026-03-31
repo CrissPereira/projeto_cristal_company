@@ -239,6 +239,10 @@ a:hover {
         padding: 0px 20px;
     }
 
+    .resumo {
+        text-align: center;
+    }
+
     .lista_rodape {
         gap: 10px;
     }
@@ -266,6 +270,16 @@ a:hover {
         padding: 15px 10px;
     }
 
+<<<<<<< Updated upstream
+=======
+    input[type="text"],
+    input[type="number"],
+    textarea {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+>>>>>>> Stashed changes
     .opcoes {
         flex-wrap: wrap;
     }
